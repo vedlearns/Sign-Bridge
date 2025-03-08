@@ -1,0 +1,363 @@
+.navbar {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: #002cc89e;
+  color: white;
+  font-size: 1.2em;
+}
+
+.navbarBox1 {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+}
+
+.navbar a {
+  margin-inline: 1em;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+  margin-block: 0.5em;
+}
+
+.navbar a:hover {
+  color: #1ce1f3;
+}
+
+.sticky-link {
+  position: sticky;
+  bottom: 20px;
+  left: 95%;
+  background-color: #ff0051d9;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 4.3em;
+  height: 4em;
+}
+
+.sticky-link:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05);
+}
+
+.signContainer {
+  background: linear-gradient(to right, #1a2b81, #0533bf);
+}
+
+.contentContainer {
+  width: 100%;
+  padding: 2.5em;
+  margin-block: 4em;
+  min-height: 28em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5em;
+}
+
+.contentBox,
+.SLTBox {
+  background-color: rgb(1, 8, 111);
+  padding: 2em;
+  min-height: 24em;
+  border: rgba(66, 63, 63, 0.881) 0.1px solid;
+  border-radius: 2em;
+  width: 55%;
+  margin-right: 1em;
+  transition: all 0.3s ease-in-out;
+}
+
+.contentBox p {
+  color: white;
+  padding-block: 0.5rem;
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+
+.contentBox strong {
+  color: white;
+}
+
+.imageContainer {
+  width: 42%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageContainer img {
+  height: 25em;
+  max-width: 100%;
+  margin-inline: 2em;
+  border-radius: 2em;
+  object-fit: cover;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  min-height: 18rem;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  line-height: 2.2rem;
+  padding: 2em;
+}
+
+footer p,
+footer a {
+  font-size: larger;
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffcc00;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 1025px) {
+  .contentContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .contentBox,
+  .SLTBox {
+    width: 48%;
+    margin-right: 0;
+  }
+
+  .imageContainer {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbarBox1 {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .imageContainer img {
+    width: 100%;
+    height: auto;
+    max-height: 25em;
+    object-fit: cover;
+    border-radius: 2em;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contentBox,
+  .SLTBox {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .imageContainer {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .imageContainer img {
+    height: auto;
+    width: 80%;
+    margin-inline: 0;
+  }
+
+  .navbarBox1 {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .contentContainer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contentBox,
+  .SLTBox {
+    width: 90%;
+    padding: 1.5em;
+  }
+
+  .imageContainer img {
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media (max-width: 812px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 1em;
+  }
+
+  .navbarBox1 {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .contentBox,
+  .SLTBox {
+    width: 100%;
+    padding: 1em;
+  }
+
+  .contentBox p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .imageContainer img {
+    width: 100%;
+    height: auto;
+    border-radius: 1em;
+  }
+
+  .navbar {
+    padding: 1em;
+  }
+
+  .navbarBox1 {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar a {
+    display: block;
+    margin: 0.5em 0;
+  }
+}
+
+.button {
+  min-width: 120px;
+  position: relative;
+  cursor: pointer;
+  padding: 12px 17px;
+  border: solid rgba(7, 35, 108, 0.736) 0.1px;
+  border-radius: 7px;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  background: radial-gradient(
+    ellipse at bottom,
+    rgb(72, 148, 228) 0%,
+    rgba(8, 103, 186, 0.656) 45%
+  );
+  color: rgb(255, 255, 255);
+  transition: all 1s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.button::before {
+  content: "";
+  width: 70%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  opacity: 0.2;
+  transition: all 1s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.button:hover {
+  color: rgb(255, 255, 255, 1);
+  transform: scale(1.1) translateY(-3px);
+}
+
+.button:hover::before {
+  opacity: 1;
+}
+/*  */
+.Btn {
+  width: 150px;
+  height: 50px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 13.5px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 40px;
+  cursor: pointer;
+  background: linear-gradient(-45deg, #f7219399, #242bff, #3903ff, #371af3);
+  background-size: 1000% 1000%;
+  animation: gradient 5s ease infinite;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.247);
+  transition-duration: 0.1s;
+}
+/* Button's gradient animation */
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
+/* Effect on Hover*/
+.Btn::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 100%;
+  left: -70px;
+  top: 0;
+  background-color: rgba(214, 199, 255, 0.329);
+  filter: blur(10px);
+  transition-duration: 0.3s;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.Btn:hover::before {
+  transform: translateX(250px);
+  transition-duration: 0.3s;
+}
+/* Effect on click */
+.Btn:active {
+  transform: translate(2px, 2px);
+  transition-duration: 0.1s;
+}
