@@ -1,43 +1,43 @@
+import { useState } from "react";
+
 const NavbarComponent = ({ setTab }) => {
+  const [activeTab, setActiveTab] = useState("Sign Bridge");
+
   const handleOnClick = (e) => {
-    if(e.target.textContent)
-    setTab(e.target.textContent);
-    else
-    setTab("Sign Bridge");
+    const tabName = e.target.textContent || "Sign Bridge";
+    setTab(tabName);
+    setActiveTab(tabName);
   };
+
   return (
-    <>
-      <nav id="navbar" className="navbar">
-        <div className="navbarBox1">
-          <a className="flex justify-center" onClick={handleOnClick} href="#">
-            <img
-              className=" w-[4em]"
-              src="sign-bridge-high-resolution-logo-transparent.png"
-              alt=""
-            />
+    <nav id="navbar" className="navbar">
+      <div className="navbarBox1">
+        <a className="flex justify-center" onClick={handleOnClick} href="#">
+          <img
+            className="w-[4em]"
+            src="sign-bridge-high-resolution-logo-transparent.png"
+            alt="Sign Bridge Logo"
+          />
+        </a>
+        {["Translate", "Gestures", "Resources", "Text To Sign"].map((tab) => (
+          <a
+            key={tab}
+            onClick={handleOnClick}
+            href="#"
+            className={activeTab === tab ? "text-blue-400 font-bold" : ""}
+          >
+            {tab}
           </a>
-          <a  onClick={handleOnClick} href="#">
-            Translate
+        ))}
+      </div>
+      <div>
+        <button className="Btn">
+          <a className="text-xl" href="">
+            Sign Up
           </a>
-          <a onClick={handleOnClick} href="#">
-            Gestures
-          </a>
-          <a onClick={handleOnClick} href="#">
-            Resources
-          </a>
-          <a onClick={handleOnClick} href="#">
-            Text To Sign
-          </a>
-        </div>
-        <div>
-          <button className="Btn">
-            <a className="text-xl " href="">
-              Sign Up
-            </a>
-          </button>
-        </div>
-      </nav>
-    </>
+        </button>
+      </div>
+    </nav>
   );
 };
 

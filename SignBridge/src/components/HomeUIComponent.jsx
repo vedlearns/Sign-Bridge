@@ -173,7 +173,6 @@ const HomeUIComponent = ({setTab}) => {
           </button>
       </div>
       </div>
-
     </>
   );
 };

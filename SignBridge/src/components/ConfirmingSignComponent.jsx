@@ -12,21 +12,22 @@ const ConfirmingSignComponent=()=>{
 
 return(
   <>
-  <div className="flex justify-evenly my-2 items-center gap-5 ">
+<div className="flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-5 my-2 text-center">
   <button
-        onClick={confirmSign}
-        className="mt-3 px-4 py-2 text-lg bg-[#2547f4] text-white rounded-lg"
-      >
-        Confirm Sign
-      </button>
-      {/* Show confirmed sign to be added */}
-      {confirmedSign && (
-        <p className="mt-2 text-lg text-white font-semibold">
-          Confirmed Sign: {confirmedSign}
-        </p>
-      )}
-  </div>
-  
+    onClick={confirmSign}
+    className="px-4 py-2 text-sm sm:text-lg bg-[#2547f4] text-white rounded-lg"
+  >
+    Confirm Sign
+  </button>
+
+  {/* Show confirmed sign to be added */}
+  {confirmedSign && (
+    <p className="text-sm sm:text-lg text-white font-semibold">
+      Confirmed Sign: {confirmedSign}
+    </p>
+  )}
+</div>
+
   </>
 )
 }

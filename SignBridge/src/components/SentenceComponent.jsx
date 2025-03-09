@@ -12,42 +12,36 @@ const SentenceComponent=()=>{
   };
 
   return(
-    <>
-      <p className="mt-8 mb-4 mx-5 text-lg text-white font-semibold">
-        <strong className="text-xl text-blue-500 ">Formed Sentence:</strong> {sentence.join("")}
-      </p>
-
-    <div className="my-5 text-lg flex justify-evenly items-center">
-
- 
-      {/* Add confirmed sign to sentence */}
-      <button
-        onClick={addToSentence}
-        className="mt-3 px-4 py-2 bg-green-500 text-white rounded-lg"
-        disabled={!confirmedSign}
-      >
-        Add Sign to Sentence
-      </button>
-
-      {/* Add Space */}
-      <button
-        onClick={() => setSentence((prev) => [...prev, " "])}
-        className="mt-3 px-4 py-2 bg-gray-500 text-white rounded-lg"
-      >
-        Add Space
-      </button>
-      {/* Clear sentence button */}
-      <button
-        onClick={() => setSentence([])}
-        className="mt-3 px-4 py-2 bg-red-500 text-white rounded-lg"
-      >
-        Clear Sentence
-      </button>
-      </div>
-
-      {/* Show full sentence */}
-
-      
+    <><p className="mt-6 mb-4 text-base sm:text-lg text-white font-semibold text-center">
+    <strong className="text-lg sm:text-xl text-blue-500">Formed Sentence:</strong> {sentence.join("")}
+  </p>
+  
+  <div className="my-5 flex flex-wrap justify-center gap-3 sm:gap-5">
+    {/* Add confirmed sign to sentence */}
+    <button
+      onClick={addToSentence}
+      className="px-2 py-2 bg-green-500 text-white rounded-lg text-sm sm:text-sm"
+      disabled={!confirmedSign}
+    >
+      Add Sign to Sentence
+    </button>
+  
+    {/* Add Space */}
+    <button
+      onClick={() => setSentence((prev) => [...prev, " "])}
+      className="px-2 py-2 bg-gray-500 text-white rounded-lg text-sm sm:text-sm"
+    >
+      Add Space
+    </button>
+  
+    {/* Clear Sentence */}
+    <button
+      onClick={() => setSentence([])}
+      className="px-2 py-2 bg-red-500 text-white rounded-lg text-sm sm:text-sm"
+    >
+      Clear Sentence
+    </button>
+  </div>      
     </>
   )
 }
