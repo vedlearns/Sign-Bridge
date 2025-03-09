@@ -31,7 +31,7 @@ const TextToSignComponent = () => {
         Text To Sign
       </h1>
 
-      <p className="text-base sm:text-lg md:text-xl text-white text-left max-w-2xl text-center sm:text-left mb-6">
+      <p className="text-base sm:text-lg md:text-xl text-white text-left max-w-2xl sm:text-left mb-6">
         Convert any text into ASL sign language instantly. Just type a sentence and click "Convert" to see the corresponding signs.
       </p>
 

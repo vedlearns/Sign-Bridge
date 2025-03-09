@@ -10,7 +10,7 @@ return(
           <p>Bridging communication gaps, one sign at a time.</p>
         </div>
         <div >
-          <a href="/privacy-policy" >Privacy Policy</a>
+          <a href="/privacy-policy" >Privacy Policy </a>
           <a href="/terms-of-service" >Terms of Service</a>
         </div>
         <SocialContactComponent/>
