@@ -54,8 +54,8 @@ const SignLanguageTranslator = () => {
       {/* Sign Detection Box */}
       <div className="bg-[#04294e] mt-5 rounded-3xl flex flex-col justify-center items-center px-4 sm:px-6 py-8 w-full max-w-3xl">
         <div className="mx-2 sm:mx-5">
-          <p className="mt-6 text-base sm:text-lg font-bold text-white">
-            <strong className="text-lg sm:text-xl text-blue-500">Detected Sign: </strong>
+          <p className="mt-6  text-4xl sm:text-3xl font-bold text-white">
+            <strong className="text-5xl sm:text-3xl mx-2 text-blue-500">Detected Sign: </strong>
             {currentSign}
           </p>
         </div>

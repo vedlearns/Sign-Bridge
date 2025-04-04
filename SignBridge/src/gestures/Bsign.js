@@ -51,4 +51,3 @@ bSign.addDirection(Finger.Ring, FingerDirection.VerticalUp, 0.70);
 bSign.addCurl(Finger.Pinky, FingerCurl.NoCurl, 1);
 bSign.addDirection(Finger.Pinky, FingerDirection.VerticalUp, 0.70);
 
-

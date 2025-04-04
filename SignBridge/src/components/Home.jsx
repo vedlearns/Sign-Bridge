@@ -7,6 +7,7 @@ import NavbarComponent from "./NavbarComponent";
 import TextToSignComponent from "./TextToSignComponent";
 import ResourcesComponent from "./ResourcesComponent";
 import FooterComponent from "./FooterComponent";
+import FirebaseAuth from "./Auth/FirebaseAuth";
 import "./Home.css";
 
 const Home = () => {
@@ -20,9 +21,11 @@ const Home = () => {
         {tab === "Gestures" && <GesturesComponent />}
         {tab === "Resources" && <ResourcesComponent />}
         {tab === "Text To Sign" && <TextToSignComponent />}
+        {tab === "Join Us" &&<FirebaseAuth />}
+        {tab!=="Join Us" &&  
         <a className="sticky-link " href="#navbar">
           <p className="text-lg flex gap-1 items-center "><FaArrowCircleUp className="text-lg " />Top</p>
-        </a>
+        </a> }
         {tab === "Sign Bridge" && <FooterComponent />}
       </div>
     </>

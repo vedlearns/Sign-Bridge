@@ -49,3 +49,4 @@ tSign.addDirection(Finger.Ring, FingerDirection.VerticalUp, 0.70);
 tSign.addCurl(Finger.Pinky, FingerCurl.FullCurl, 1);
 tSign.addDirection(Finger.Pinky, FingerDirection.DiagonalUpLeft, 0.70);
 
+//-----------------------

@@ -3,7 +3,7 @@ import { createContext, useState } from "react";
 export const SignContext = createContext();
 
 export const SignContextProvider = ({ children }) => {
-  const [currentSign, setCurrentSign] = useState("waiting...");
+  const [currentSign, setCurrentSign] = useState("Model Loading... ");
   const [confirmedSign, setConfirmedSign] = useState(null);
   const [sentence, setSentence] = useState([]);
   const signs = [

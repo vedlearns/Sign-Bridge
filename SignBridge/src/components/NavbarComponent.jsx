@@ -1,7 +1,14 @@
 import { useState } from "react";
+import { getAuth, signOut } from "firebase/auth";
+import { app } from "../firebase";
+import { UserAuth } from "../context/firebaseContext";
+import LogOut from "./LogOut";
+
+const firebaseAuth = getAuth(app);
 
 const NavbarComponent = ({ setTab }) => {
   const [activeTab, setActiveTab] = useState("Sign Bridge");
+  const { userSignIn,setMessage } = UserAuth();
 
   const handleOnClick = (e) => {
     const tabName = e.target.textContent || "Sign Bridge";
@@ -31,14 +38,19 @@ const NavbarComponent = ({ setTab }) => {
         ))}
       </div>
       <div>
-        <button className="Btn">
-          <a className="text-xl" href="">
-            Sign Up
-          </a>
-        </button>
+
+        {userSignIn ? (
+          <LogOut handleLogOut={() => {signOut(firebaseAuth);setMessage("");
+          }}/>
+        ) : (
+          <button className="Btn">
+       <a className="text-xl" onClick={handleOnClick} href="#">
+         Join Us
+       </a>
+     </button>
+        )}
       </div>
     </nav>
   );
 };
-
 export default NavbarComponent;

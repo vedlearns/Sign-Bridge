@@ -22,7 +22,7 @@ return(
 
   {/* Show confirmed sign to be added */}
   {confirmedSign && (
-    <p className="text-sm sm:text-lg text-white font-semibold">
+    <p className="text-xl sm:text-2xl text-white font-semibold">
       Confirmed Sign: {confirmedSign}
     </p>
   )}

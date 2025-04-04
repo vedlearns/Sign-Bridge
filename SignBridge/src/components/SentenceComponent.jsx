@@ -16,7 +16,7 @@ const SentenceComponent=()=>{
     <strong className="text-lg sm:text-xl text-blue-500">Formed Sentence:</strong> {sentence.join("")}
   </p>
   
-  <div className="my-5 flex flex-wrap justify-center gap-3 sm:gap-5">
+  <div className="my-5 flex flex-wrap text-2xl justify-center gap-3 sm:gap-5">
     {/* Add confirmed sign to sentence */}
     <button
       onClick={addToSentence}
