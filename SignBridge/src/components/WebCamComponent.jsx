@@ -3,9 +3,6 @@ import { useState } from "react";
 
 const WebCamComponent = ({ webcamRef }) => {
   const [facingMode, setFacingMode] = useState("user"); // Default: front camera
-  const toggleCamera = () => {
-    setFacingMode((prevMode) => (prevMode === "user" ? "environment" : "user"));
-  };
 
   return (
     <>
