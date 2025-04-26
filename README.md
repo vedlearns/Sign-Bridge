@@ -22,8 +22,7 @@ It uses **MediaPipe**, **TensorFlow.js**, **Handpose**, and **Fingerpose** to de
 - **Hand Tracking:** @tensorflow-models/handpose
 - **Gesture Recognition:** Fingerpose
 - **Webcam Input:** react-webcam
-- **Backend:** (Optional / Minimal) Node.js / Express
-- **Deployment:** Netlify / Firebase Hosting
+- **Deployment:** Netlify 
 
 ---
 
