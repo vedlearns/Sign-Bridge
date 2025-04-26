@@ -7,8 +7,6 @@ const LogOut=({handleLogOut})=>{
           </a>
         </button>
     </>
-  )
-  
+  )  
   }
-  
   export default LogOut
