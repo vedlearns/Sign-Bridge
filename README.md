@@ -26,9 +26,9 @@ It uses **MediaPipe**, **TensorFlow.js**, **Handpose**, and **Fingerpose** to de
 
 ---
 
-## 📷 Link 
+## 📷 Demo
 
-[> _Sign Bridge!_  ]((https://signbridgebyved.netlify.app/))
+[Sign Bridge!  ](https://signbridgebyved.netlify.app/)
 
 ---
 
